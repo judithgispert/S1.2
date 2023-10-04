@@ -25,7 +25,7 @@ public class Venda {
 	public float calcularTotal() throws VendaBuidaException{
 		int cont = 0;
 		if (llistaProductes.isEmpty()) {
-			throw new VendaBuidaException("Per fer una venda primer has d’afegir productes.");
+			throw new VendaBuidaException();
 		}else {
 			do {
 				float preu = llistaProductes.get(cont).getPreu();
