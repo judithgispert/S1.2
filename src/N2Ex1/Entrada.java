@@ -14,7 +14,7 @@ public class Entrada {
 		do {
 			try {
 				continueCode = false;
-				getByte("Write a number between -128 and 127:");
+				getByte("How old are you?");
 			}catch(InputMismatchException ex) {
 				System.out.println("Format error.");
 				continueCode = true;
@@ -24,7 +24,7 @@ public class Entrada {
 		do {
 			try {
 				continueCode = false;
-				getInt("Write a number between -2^31 and 2^31-1:");
+				getInt("What is the result of your age x 2612?");
 			}catch(InputMismatchException  ex) {
 				System.out.println("Format error.");
 				continueCode = true;
@@ -34,7 +34,7 @@ public class Entrada {
 		do {
 			try {
 				continueCode = false;
-				getFloat("Write a number with coma:");
+				getFloat("How much does an apple cost?");
 			}catch(InputMismatchException  ex) {
 				System.out.println("Format error..");
 				continueCode = true;
@@ -44,7 +44,7 @@ public class Entrada {
 		do {
 			try {
 				continueCode = false;
-				getDouble("Write a number with coma:");
+				getDouble("How much does the rent cost?");
 			}catch(InputMismatchException  ex) {
 				System.out.println("Format error.");
 				continueCode = true;
@@ -54,7 +54,7 @@ public class Entrada {
 		do {
 			try{
 				continueCode = false;
-				getChar("Write a character:");
+				getChar("Write your favorite letter:");
 			}catch (Exception ex) {
 				System.out.println("Format error.");
 				continueCode = true;
@@ -64,7 +64,7 @@ public class Entrada {
 		do {
 			try {
 				continueCode = false;
-				getString("Write a sentence:");
+				getString("Write your name and surname:");
 			}catch(Exception  ex) {
 				System.out.println("Format error.");
 				continueCode = true;
