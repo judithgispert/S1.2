@@ -1,95 +1,10 @@
 package N2Ex1;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Entrada {
 	
-	public static void main (String[]args) {
-		
-		Scanner input = new Scanner (System.in);
-		
-		boolean continueCode;		
-		
-		do {
-			try {
-				continueCode = false;
-				getByte("How old are you?");
-			}catch(InputMismatchException ex) {
-				System.out.println("Format error.");
-				continueCode = true;
-			}
-		}while(continueCode);
-	
-		do {
-			try {
-				continueCode = false;
-				getInt("What is the result of your age x 2612?");
-			}catch(InputMismatchException  ex) {
-				System.out.println("Format error.");
-				continueCode = true;
-			}
-		}while(continueCode);
-		
-		do {
-			try {
-				continueCode = false;
-				getFloat("How much does an apple cost?");
-			}catch(InputMismatchException  ex) {
-				System.out.println("Format error..");
-				continueCode = true;
-			}
-		}while(continueCode);
-		
-		do {
-			try {
-				continueCode = false;
-				getDouble("How much does the rent cost?");
-			}catch(InputMismatchException  ex) {
-				System.out.println("Format error.");
-				continueCode = true;
-			}
-		}while(continueCode);
-		
-		do {
-			try{
-				continueCode = false;
-				getChar("Write your favorite letter:");
-			}catch (Exception ex) {
-				System.out.println("Format error.");
-				continueCode = true;
-			}
-		}while(continueCode);
-		
-		do {
-			try {
-				continueCode = false;
-				getString("Write your name and surname:");
-			}catch(Exception  ex) {
-				System.out.println("Format error.");
-				continueCode = true;
-			}
-		}while(continueCode);
-		
-		do {
-			try {
-				continueCode = false;
-				boolean error = getBoolean("Do you have a sister?");
-				if ((error == true)||(error == false)) {
-					continueCode = false;
-				}
-			}catch(Exception  ex) {
-			System.out.println("Format error.");
-			continueCode = true;
-				}
-		}while(continueCode);
-		
-		
-		
-		
-		
-		
-	}
+
 	public static byte getByte (String missatge) {
 		Scanner input = new Scanner (System.in);
 		System.out.println(missatge);
@@ -144,4 +59,5 @@ public class Entrada {
 		}
 		return returnTF;
 	}
+	
 }
